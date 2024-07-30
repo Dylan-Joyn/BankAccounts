@@ -45,7 +45,7 @@ double BankAccount::getMonthlyService() {
 	return monthlyService;
 }
 
-ostream operator& <<(ostream& strm, BankAccount& acct) {
+ostream& operator <<(ostream& strm, BankAccount& acct) {
 	strm << "Starting Balance: " << acct.monthStartBal << endl
 		<< "Number of Deposits: " << acct.getNumDeposits() << endl
 		<< "Number of Withdrawals: " << acct.getNumWithdrawals() << endl
